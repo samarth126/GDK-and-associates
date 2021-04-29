@@ -27,7 +27,7 @@
         <div class="carousel-item" style="background-image: url(assets/img/slide/presentation.jpg)">
           <div class="carousel-container">
             <div class="container">
-              <h2 class="animate__animated animate__fadeInDown">GDK &amp; Associtae Presentations-</h2>
+              <h2 class="animate__animated animate__fadeInDown">GDK &amp; Associtae Presentations</h2>
               <p class="animate__animated animate__fadeInUp">See up to date with the knowledge you can gain on various professional topics of our profession.</p>
               <a href="pages/presentation.php" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
             </div>
@@ -38,8 +38,8 @@
         <div class="carousel-item" style="background-image: url(assets/img/slide/services.jpg)">
           <div class="carousel-container">
             <div class="container">
-              <h2 class="animate__animated animate__fadeInDown">GDK &amp; Associate Services Introduction-</h2>
-              <p class="animate__animated animate__fadeInUp">The details of professional experience of M/s. G D K and Associates in terms of the services we provide are-</p>
+              <h2 class="animate__animated animate__fadeInDown">GDK &amp; Associate Services Introduction</h2>
+              <p class="animate__animated animate__fadeInUp">The details of professional experience of M/s. G D K and Associates in terms of the services we provide are.</p>
               <a href="pages/audit.php" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
             </div>
           </div>
@@ -50,7 +50,7 @@
           <div class="carousel-item" style="background-image: url(assets/img/slide/article.jpg)">
           <div class="carousel-container">
             <div class="container">
-              <h2 class="animate__animated animate__fadeInDown">GDK &amp; Associate Circulars and Notifications-</h2>
+              <h2 class="animate__animated animate__fadeInDown">GDK &amp; Associate Circulars and Notifications</h2>
               <p class="animate__animated animate__fadeInUp">To know more about the latest updates and notifications on various statutory compliances.</p>
               <a href="pages\circularsandarticle.php" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
             </div>
@@ -89,7 +89,7 @@
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
      
            <p>
-           Our firm GDK & Associates is a Chartered Accountancy Firm which has been formed with a blend of experience as well as acquaintance with the emerging areas and technologies in the form of senior professionals with over 25 years of experience on one hand, and newly qualified ones with immense potential yet to be tapped on the other hand.</br> We offer services in Indore and other major cities in India, like Audits for Banking Sectors, Registered Companies, Non-Corporative Entities, Income Tax & Wealth Tax Advisory, Company Law Consultancy, Financial & Cost Management.
+           Our firm GDK & Associates is a Chartered Accountancy Firm which has been formed with a blend of experience as well as acquaintance with the emerging areas and technologies in the form of senior professionals with over 25 years of experience on one hand, and newly qualified ones with immense potential yet to be tapped on the other hand.</br></br> We offer services in Indore and other major cities in India, like Audits for Banking Sectors, Registered Companies, Non-Corporative Entities, Income Tax & Wealth Tax Advisory, Company Law Consultancy, Financial & Cost Management.
            </p>
           <p>
           GDK and Associates is a blend of distinguished Chartered Accountant, Corporate Financial Advisors, and Tax Consultants in India. Chartered Accountants’ firm outlines a combination of specialized skills that are equipped to offer sound Financial Solutions and Financial Advices. The association is an assemblage of professionally experienced people who are bound to add value and benefits as per the needs of clients.
@@ -279,7 +279,7 @@ $('.counter-counnt').each(function () {
 
         <div class="section-title">
           <h2>Services</h2>
-          <p>Worrying much about your financial dates, compliances, and auditing problems? Get an appointment with us for the best solutions </p>
+          <p>Worrying much about your Financial dates, Compliances, and Auditing Problems? Get an Appointment with us for the Best Solutions </p>
         </div>
 
       
@@ -297,7 +297,7 @@ $('.counter-counnt').each(function () {
             <a href="pages/audit1.php">  <div class="box">
                 <div class="our-services speedup">
                     <div class="icon"><div class="imaa1"><i class="fa fa-book"></i></div> </div>
-                    <h4>Audit of Companies incorporated under the Indian Companies Act</h4>
+                    <h4>Audit of Companies Incorporated Under the Indian Companies Act</h4>
                 </div>
             </div></a>
         </div>
@@ -347,7 +347,7 @@ $('.counter-counnt').each(function () {
            <a href="pages/oas.php">  <div class="box">
                 <div class="our-services privacy">
                     <div class="icon"><div class="imaa2"><i class="fa fa-folder"></i></div></div>
-                    <h4>Other areas of Services</h4>
+                    <h4>Other Areas of Services</h4>
                 </div>
             </div></a>
         </div>
@@ -475,7 +475,7 @@ $conn->close();
 
 
 <select class="form-control" name="partnername" id="Selectid"  placeholder="Select Services" required>
-            <option value="please select" >CA Kemish Soni</option>
+            <option value="please select" >CA Kemisha  Soni</option>
             </select>
 
  </div>
@@ -530,12 +530,12 @@ $conn->close();
   background-color: #F9C5D1;
   color: #2D325B;
   cursor: pointer;
-  padding: 18px;
+  padding: 15px;
   width: 100%;
   border: none;
   text-align: left;
   outline: none;
-  font-size: 15px;
+  font-size: 25px;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -673,7 +673,7 @@ for (i = 0; i < coll.length; i++) {
 
 
           <div class="col-lg-4 " style="background-color:#2D325B; color:white; " >
-</br></br>       <h3 class="text-center">Why choose us?</h3></br>
+</br></br>       <h3 class="text-center">Our Principles </h3></br>
 <div style="padding-left:30px; padding-right:30px;">
           <p>
           M/S GDK & Associates is established with the following principles, objectives, and adopting
@@ -1127,28 +1127,31 @@ $conn->close();
 
      <div style="background-color:#1E73BE; color:white;" class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-2 content">
     </br></br>
-    <h3 class="text-center"><b>Our Clients</b></h3> </br>
+    <h3 class="text-center"><b>OUR COMMITMENT TOWARDS OUR CLIENTS</b></h3> </br>
      <div style="padding-left:30px; padding-right:30px;">
      <p>
-     Our clients extend to different industries like Banking &amp; Financial Industries, SMEs,
-IT Industries, Educational Institutions, Construction Industry and more. Our team of
-experienced professionals strives to serve our clients with complete and utmost
-Professionalism.
+     We are a Chartered Accountancy firm and we work on the strict principles of Integrity, Objectivity and 
+     Independence to ensure we provide our best for the betterment of the society, our profession, and the nation as a whole.
 
      </p>
 
      <p>
-     We are a Chartered Accountancy firm and we work on the strict principles of Integrity,
-Objectivity and Independence to ensure we provide our best for the betterment of the
-society, our profession, and the nation as a whole.
+     Our clients extend to different industries like Banking & Financial Industries, SMEs, IT Industries, Educational Institutions, Construction Industry and more. We at GDK & Associates strive to provide 
+     the services to our clients with complete and utmost professionalism in this ever-changing world of Finance. 
 
      </p>
 
      <p>
-     We believe in working with complete dedication and determination and strive to prove to
-be a partner in nation-building.
+     We believe in working with complete dedication and determination, providing our client with quality 
+     services that enhances the value of their business and striving to prove to be a partner in nation-building.
 
-     </p> </br></br>
+     </p> 
+     <p>
+     The services we provide to our clients are catered based on their needs and requirements, and consideration of certain factors from our angle, which include, but does not limit to, the nature of their business, the size and scale of their business, laws and regulations
+      applicable to them and such other factors that help us in providing our services to our clients with the best of our ability.
+     </p>
+     
+     </br></br>
      </div>
      </div>
 

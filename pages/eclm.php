@@ -7,7 +7,7 @@
  <img class="responsive wow fadeInUp" src="../assets\img\banners\service.png" alt=" GST registration">
                 <div class="text">
                 <div class="secttion-title">
-                <h2>Experience of Corporate Law Matters</h2>
+                <h2>Corporate Law Matters</h2>
                 </div>
                 </div>
             </div>

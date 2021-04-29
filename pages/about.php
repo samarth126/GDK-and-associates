@@ -3,14 +3,20 @@
 
 
 
-
+<div class="box">
+     
+ <img class="responsive wow fadeInUp" src="../assets\img\banners\alumini (1).png" alt=" GST registration">
+            <div class="text">
+            <div class="section-title">
+          <h2>About Us</h2>
+               </div>
+            </div>
+        </div>
 <!-- ======= About Us Section ======= -->
 <section id="about" class="about">
       <div class="container">
 
-        <div class="section-title">
-          <h2>About Us</h2>
-               </div>
+     
 
         <div class="row">
          

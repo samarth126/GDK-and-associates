@@ -50,25 +50,25 @@ footer p{
 		<div class="col-md-2 col-lg-2 col-xl-2  mt-3">
 		  <h6 class="text-uppercase mb-4 font-weight-bold">Services</h6>
 		  <p>
-			<a href="book.php">AUDIT EXPERIENCE IN THE BANKING SECTOR</a>
+			<a href="pages/audit.php">AUDIT IN THE BANKING SECTOR</a>
 		  </p>
 		  <p>
-			<a href="book.php">AUDIT EXPERIENCE OF COMPANIES INCORPORATED UNDER THE INDIAN COMPANIES ACT</a>
+			<a href="pages/audit1.php">AUDIT OF COMPANIES INCORPORATED UNDER THE INDIAN COMPANIES ACT</a>
 		  </p>
 		  <p>
-			<a href="book.php">AUDIT EXPERIENCE OF NON-CORPORATE ENTITIES</a>
+			<a href="pages/audit2.php">AUDIT OF NON-CORPORATE ENTITIES</a>
 		  </p>
 		  <p>
-			<a href="book.php">EXPERIENCE OF DIRECT TAXES</a>
+			<a href="pages/directtax.php">DIRECT TAXES</a>
 		  </p>
 		  <p>
-			<a href="book.php">EXPERIENCE OF INDIRECT TAXES</a>
+			<a href="pages/indirecttax.php">INDIRECT TAXES</a>
 		  </p>
 		  <p>
-			<a href="book.php">EXPERIENCE OF CORPORATE LAW MATTERS</a>
+			<a href="pages/eclm.php">CORPORATE LAW MATTERS</a>
 		  </p>
 		  <p>
-			<a href="book.php">OTHER AREAS OF SERVICES</a>
+			<a href="pages/oas.php">OTHER AREAS OF SERVICES</a>
 		  </p>
 		</div>
 		<!-- Grid column -->
@@ -77,22 +77,22 @@ footer p{
 		<hr class="w-100 clearfix d-md-none">
 	<h6 class="text-uppercase mb-4 font-weight-bold">services</h6>
 	<p>
-	  <a href="book.php">Circular & Notification</a>
+	  <a href="pages\circularsandarticle.php">Circular & Notification</a>
 	</p>
 	<p>
-	  <a href="book.php">Knowledge Centre</a>
+	  <a href="pages\knowledge.php">Knowledge Centre</a>
 	</p>
 	<p>
-	  <a href="book.php">Presentation</a>
+	  <a href="pages\presentation.php">Presentation</a>
 	</p>
 	<p>
-	  <a href="book.php">Useful Links</a>
+	  <a href="pages\useful.php">Useful Links</a>
 	</p>
 	<p>
-	  <a href="book.php">Videos</a>
+	  <a href="pages\videos.php">Videos</a>
 	</p>
 	<p>
-	  <a href="book.php">Alumini</a>
+	  <a href="pages\alumini.php">Alumini</a>
 	</p>
   </div>
 		<hr class="w-100 clearfix d-md-none">
@@ -101,16 +101,16 @@ footer p{
 		<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
 		  <h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
 		  <p>
-			<a href="about.php">Login</a>
+			<a href="login.php">Login</a>
 		  </p>
 		  <p>
-			<a href="book.php">Dashboard</a>
+			<a href="welcome.php">Dashboard</a>
 		  </p>
 		  <p>
-			<a href="pricing.php">Admin</a>
+			<a href="index.php">Get An Appointment</a>
 		  </p>
 		  <p>
-			<a href="contact.php">AdminDashboard</a>
+			<a href="contact.php">Get in Touch for Online Services</a>
 		  </p>
 		</div>
   

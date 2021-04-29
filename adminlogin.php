@@ -78,39 +78,52 @@ if(empty($err))
 <?php include('header.php');  ?>
 
 
+</br></br>
 
-
-
-
-<div class="container mt-4">
 </br>
 </br>
+
+<div class="w-100 p-3 aaa">
+
+
 </br>
-<hr>
-<div class="row">
-<div class="col-lg-4 order-1 order-lg-2">
+
+</br>
+</br>
+
+<div class="row"> 
+<div class="col-lg-3 order-1 order-lg-2">
            
           </div>
+<style>
+.aaa{
+    background-image: linear-gradient(-45deg, #43cea2 0%, #185a9d 100%);
+}
+</style>
 
 
-
-          <div class="col-lg-4 order-1 order-lg-2">
+          <div class="col-lg-6 order-1 order-lg-2">
           <div class="shadow-lg p-3 mb-5 bg-white rounded">
-          
-<h3>Please only ADMIN Login Here:</h3>
+          <div class="section-title">
+          <h2>Please ADMIN Login Here:</h2>
+               </div> 
+               </br>
 <form action="" method="post">
   <div class="form-group">
     <label for="exampleInputEmail1">Username</label>
     <input type="text" name="username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Username">
   </div>
+  </br>
   <div class="form-group">
     <label for="exampleInputPassword1">Password</label>
     <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Password">
   </div>
+  </br>
   <div class="form-group form-check">
     <input type="checkbox" class="form-check-input" id="exampleCheck1">
     <label class="form-check-label" for="exampleCheck1">Check me out</label>
   </div>
+  </br>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 
@@ -118,10 +131,13 @@ if(empty($err))
 </div>
 
 
-<div class="col-lg-4 order-1 order-lg-2">
+<div class="col-lg-3 order-1 order-lg-2">
            
           </div>
 </div>
+</br></br></br></br></br>
 </div>
+
+
 
 <?php include('footer.php');  ?>

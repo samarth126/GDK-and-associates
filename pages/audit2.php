@@ -7,7 +7,7 @@
  <img class="responsive wow fadeInUp" src="../assets\img\banners\service.png" alt=" GST registration">
             <div class="text">
             <div class="secttion-title">
-            <h2>Audit Experience of Non-Corporate Entities</h2>
+            <h2>Audit of Non-Corporate Entities</h2>
             </div>
             </div>
         </div>
@@ -20,11 +20,46 @@
 
         <div class="row">
     
-          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
-            <p>I. Audits under Section 44AB of Income Tax Act</br>
-II. Audits of Trusts, Charitable Institutions and Others
-</p>
-            
+          <div class="col-lg-12 pt-4 pt-lg-0 order-2 order-lg-1 content">
+          
+          <p><b>a) 	Audit under 44AB of Income Tax Act</b></p>
+          <p>
+          Audit under 44AB of Income Tax Act or more commonly known as Tax audit is a compulsory audit if the annual turnover/receipts of assessed exceeds a specified limit. A practicing chartered accountant can only provide such service. The 
+          audit report is given as per format available in the forms 3CA/3CB and 3CD. The objective of Tax Audit is as follows:
+          </p>
+
+<ol>
+<li>Ensuring proper maintenance of books of accounts and other revenue or expense records properly.</li>
+<li>Ensuring that total income and claims for deduction are correct and accurate.</li>
+<li>Reduce the chances of fraudulent practices</li>
+<li>	Helps in facilitating the administration of laws with proper presentation of accounts in front of
+ tax authorities. It also helps save time of Assessing officers who are engaged in carrying out routine verification.</li>
+
+</ol>
+
+
+
+
+<p><b>b) 	Audit of Trust, charitable institutions and others</b></p>
+
+<p>A company incorporated under the Indian companies act has a responsibility of filing various returns and forms as per the relevant provisions under the companies act. For the aforementioned purpose along with other purposes like incorporation of a Company, matters related merger and amalgamation or acquisition and such other company related secretarial work, we, GDK and Associates provide such services to our clients
+ in accordance with the relevant and applicable provisions of the Indian companies act and rules framed therein.</p>
+
+<p>In addition to these we also provide consultancy to the companies in accordance with their requirements and other factors including, but not limited to-</p>
+
+
+<ol>
+
+      <li>Nature of Business</li>
+      <li>Size and Scale of the entity</li>
+      <li>Status of the company [Public Ltd. Company(listed or Unlisted),Company incorporated under Section 8 of the Indian Companies Act, Private Ltd. Company etc.]</li>
+      <li>Applicable laws and regulations on the company</li>
+
+
+</ol>
+
+
+
           </div>
         </div>
 

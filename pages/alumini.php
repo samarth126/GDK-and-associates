@@ -14,7 +14,7 @@ if(!isset($_SESSION['loggedinn']) || $_SESSION['loggedinn'] !==true)
 
 <div class="box">
      
- <img class="responsive wow fadeInUp" src="../assets\img\banners\alumini.png" alt=" GST registration">
+ <img class="responsive wow fadeInUp" src="../assets\img\banners\alumini (1).png" alt=" GST registration">
             <div class="text">
             <div class="secttion-title">
           <h2>ALUMINI</h2>

@@ -122,7 +122,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !==true)
           <li><a class="nav-link scrollto" href="pages/contact.php">Contact</a></li>
 
 
-        <div id="bb"><li><a href="logout.php"><button type="button" id="aa" class="btn btn-danger">
+        <div id="bb"><li><a href="adminlogout.php"><button type="button" id="aa" class="btn btn-danger">
           LOG OUT
         </button></a></li>
         </ul>
@@ -135,20 +135,41 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !==true)
   </header><!-- End Header -->
 
 
+<div class="container">
 
+  <div class="btn-group-vertical">
 
 
   <a href="./cashbook"><button type="submit" class="btn btn-primary">Check cash book</button></a>
-
+  </br></br>
   
-  <a href="/salesreg"><button type="submit" class="btn btn-primary">Check cash book</button></a>
-
+  <a href="/salesreg"><button type="submit" class="btn btn-primary">Check sales register</button></a>
+  </br></br>
   
-  <a href="/purchasereg"><button type="submit" class="btn btn-primary">Check cash book</button></a>
+  <a href="/purchasereg"><button type="submit" class="btn btn-primary">Check Purchase register</button></a>
+  </br></br>
+
+  <a href="/expensesreg"><button type="submit" class="btn btn-primary">Check Expenses Register</button></a>
+  </br></br>
+
+  <a href="/fixedassetreg"><button type="submit" class="btn btn-primary">Check Fixed Assets Registers</button></a>
+  </br></br>
+
+  <a href="/vouchers"><button type="submit" class="btn btn-primary">Check Vouchers</button></a>
+  </br></br>
+
+  <a href="/bank"><button type="submit" class="btn btn-primary">Check Bank statements</button></a>
+  </br></br>
+
+  <a href="/boa"><button type="submit" class="btn btn-primary">Check Books of Accounts</button></a>
+
+  </br></br>
+
+  <a href="/otherbills"><button type="submit" class="btn btn-primary">Check Other Relevant Bills, Statements, and Vouchers.</button></a>
 
 
-  <a href="/vouchers"><button type="submit" class="btn btn-primary">Check cash book</button></a>
+</br>
 
 
-
-
+</div>
+</div>

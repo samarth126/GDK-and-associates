@@ -70,7 +70,7 @@ if(!isset($_SESSION['loggedinn']) || $_SESSION['loggedinn'] !==true)
     }</style>
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex align-items-center">
-    <a href="index.html" class="logo me-auto"><img src="assets\GDK associates logo-1.jpg" alt="hhh" class="img-fluid"></a>
+    <a href="index.php" class="logo me-auto"><img src="assets\GDK associates logo-1.jpg" alt="hhh" class="img-fluid"></a>
     
     <div class="container d-flex align-items-center">
 

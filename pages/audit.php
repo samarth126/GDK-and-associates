@@ -23,6 +23,27 @@
         <div class="row">
      
           <div class="col-lg-12 pt-4 pt-lg-0 order-2 order-lg-1 content">
+
+          <p>
+          Bank Audit is the process of reviewing and summarizing the services, systems, financial statements of a bank or any other financial institutions in a report form. The major objective of such an audit is to ensure that the institution is operating as per the rules and regulations.
+          </p>
+
+          <p>
+          Here are a few that a bank audit will check within a financial institution:
+          </p> 
+
+        <ul>
+      <li>Security and risk management, including IT and cyber risk</li>
+<li>Liquidity and monetary flow</li>
+<li>Financial transactions</li>
+<li>Financial and regulatory reports</li>
+<li>Compliance with Banking laws and regulations.</li>
+<li>Any evidence of violations, money laundering, fraud etc.</li>
+
+        </ul>
+
+          </br>
+
             <div class="text-center"><h3>Concurrent Audits</h3></div>
             <p>We have been the concurrent auditors for various nationalized, cooperative and
 private sector banks.
