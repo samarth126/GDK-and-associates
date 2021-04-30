@@ -75,7 +75,7 @@
               <li><a href="pages/directtax.php">Direct Taxes</a></li>
               <li><a href="pages/indirecttax.php">Indirect Taxes</a></li>
               <li><a href="pages/eclm.php">Corporate Law Matters</a></li>
-              <li><a href="pages/oas.php">Other areas of Services</a></li>
+              <li><a href="pages/oas.php">Other Areas of Services</a></li>
             </ul>
           </li>
 
@@ -83,7 +83,7 @@
           <li><a class="nav-link scrollto" href="pages/industries.php">Industries</a></li>
 
 
-          <li><a class="nav-link scrollto " href="pages/circularsandarticle.php">Circulars & Notification</a></li>
+          <li><a class="nav-link scrollto " href="pages/circularsandarticle.php">Circulars & Notifications</a></li>
           <li><a class="nav-link scrollto" href="pages/knowledge.php">Knowledge Centre</a></li>
           <li><a class="nav-link scrollto" href="pages/alumini.php">Alumini </a></li>
           <li><a class="nav-link scrollto" href="pages/presentation.php">Presentation</a></li>

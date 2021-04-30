@@ -43,8 +43,7 @@ footer p{
 <footer id="footer">
     <div class="container">
       <h3>GDK & Associates</h3>
-      <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
-     	
+   	
        <div class="row">
        <!-- Grid column -->
 		<div class="col-md-2 col-lg-2 col-xl-2  mt-3">
@@ -75,7 +74,7 @@ footer p{
 		<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
 
 		<hr class="w-100 clearfix d-md-none">
-	<h6 class="text-uppercase mb-4 font-weight-bold">services</h6>
+	<h6 class="text-uppercase mb-4 font-weight-bold">Resources</h6>
 	<p>
 	  <a href="pages\circularsandarticle.php">Circular & Notification</a>
 	</p>
@@ -123,11 +122,10 @@ footer p{
 		  <p>
 			<i class="fa fa-home mr-3"></i>18/1, YN Road, 404-B, Prakrati Corporate, Behind Mocha Restaurant, Indore- 452001.</p>
 		  <p>
-			<i class="fa fa-envelope mr-3"></i>gdkandassociates@gmail.com</p>
+			<i class="fa fa-envelope mr-3"></i>info@gdkandassociates.com</p>
 		  <p>
 			<i class="fa fa-phone mr-3"></i>0731-4977901</p>
-		  <p>
-			<i class="fa fa-print mr-3"></i> 95676xxxxxx</p>
+		
 		</div>
 		<!-- Grid column -->
   
@@ -138,14 +136,12 @@ footer p{
 
 
       <div class="social-links">
-        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://www.youtube.com/channel/UCAVD8LV4ktAAiITltMBeOXA" class="twitter"><i class="bx bxl-youtube"></i></a>
+        <a href="https://www.facebook.com/gdkandassociates" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="https://www.linkedin.com/company/gdk-associates-chartered-accountants" class="linkedin"><i class="bx bxl-linkedin"></i></a>
       </div>
       <div class="copyright">
-        &copy; Copyright <strong><span>GDK</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span> GDK & Associates</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
         Designed by <a href="INFLATECH SOLUTIONS">INFLATECH SOLUTIONS</a>

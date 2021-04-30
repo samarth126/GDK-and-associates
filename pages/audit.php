@@ -32,7 +32,7 @@
           Here are a few that a bank audit will check within a financial institution:
           </p> 
 
-        <ul>
+        <ol>
       <li>Security and risk management, including IT and cyber risk</li>
 <li>Liquidity and monetary flow</li>
 <li>Financial transactions</li>
@@ -40,11 +40,11 @@
 <li>Compliance with Banking laws and regulations.</li>
 <li>Any evidence of violations, money laundering, fraud etc.</li>
 
-        </ul>
+        </ol>
 
           </br>
 
-            <div class="text-center"><h3>Concurrent Audits</h3></div>
+            <div class="text-center"><h3>CONCURRENT AUDITS</h3></div>
             <p>We have been the concurrent auditors for various nationalized, cooperative and
 private sector banks.
 </p>
@@ -57,7 +57,7 @@ periodic basis.
 
 
 
-<div class="text-center"> <h3>Inspection & Revenue Audits</h3></div>
+<div class="text-center"> <h3>INSPECTION & REVENUE AUDITS</h3></div>
             <p>The scope of inspection audit mainly consists of thorough inspection of the
 borrowers’ books of accounts, position of stock, assets hypothecated etc. Also,
 revenue audits of various branches of nationalized banks have been handled by us.
@@ -66,7 +66,7 @@ revenue audits of various branches of nationalized banks have been handled by us
 
 
 
-<div class="text-center"><h3>Statutory Audits</h3></div>
+<div class="text-center"><h3>STATUTORY AUDITS</h3></div>
             <p>We have been appointed as External (Statutory) Branch Auditors of the various
 nationalized banks and DCCB &amp; RRBs and Statutory Auditors of various
 Government Companies and PSU’s.

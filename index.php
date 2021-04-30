@@ -4,6 +4,9 @@
     include "logic.php";
 
 ?>
+
+
+
   <!-- ======= Hero Section ======= -->
   <section id="hero">
     <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -27,7 +30,7 @@
         <div class="carousel-item" style="background-image: url(assets/img/slide/presentation.jpg)">
           <div class="carousel-container">
             <div class="container">
-              <h2 class="animate__animated animate__fadeInDown">GDK &amp; Associtae Presentations</h2>
+              <h2 class="animate__animated animate__fadeInDown">GDK &amp; Associates Presentations</h2>
               <p class="animate__animated animate__fadeInUp">See up to date with the knowledge you can gain on various professional topics of our profession.</p>
               <a href="pages/presentation.php" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
             </div>
@@ -38,7 +41,7 @@
         <div class="carousel-item" style="background-image: url(assets/img/slide/services.jpg)">
           <div class="carousel-container">
             <div class="container">
-              <h2 class="animate__animated animate__fadeInDown">GDK &amp; Associate Services Introduction</h2>
+              <h2 class="animate__animated animate__fadeInDown">GDK &amp; Associates Services Introduction</h2>
               <p class="animate__animated animate__fadeInUp">The details of professional experience of M/s. G D K and Associates in terms of the services we provide are.</p>
               <a href="pages/audit.php" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
             </div>
@@ -50,7 +53,7 @@
           <div class="carousel-item" style="background-image: url(assets/img/slide/article.jpg)">
           <div class="carousel-container">
             <div class="container">
-              <h2 class="animate__animated animate__fadeInDown">GDK &amp; Associate Circulars and Notifications</h2>
+              <h2 class="animate__animated animate__fadeInDown">GDK &amp; Associates Circulars and Notifications</h2>
               <p class="animate__animated animate__fadeInUp">To know more about the latest updates and notifications on various statutory compliances.</p>
               <a href="pages\circularsandarticle.php" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
             </div>
@@ -84,7 +87,7 @@
 
         <div class="row">
           <div class="col-lg-6 order-1 order-lg-2">
-            <img src="assets/img/about.jpg" class="img-fluid" alt="">
+            <img src="assets\img\homepage3.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
      
@@ -99,7 +102,7 @@
 
       </div>
     </section><!-- End About Us Section -->
-
+</br></br>
 
 
 <!---this is elements section--->
@@ -185,7 +188,7 @@
 
 
 
-
+</br></br></br>
 
 
 
@@ -198,7 +201,7 @@
 <div class="counter">
     <div class="container">
         <div class="row">
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="col-lg-4 col-md-3 col-sm-3 col-xs-12">
                 <div class="employees">
                     <p class="counter-count">35</p>
                     <p class="employee-p">Years of Experience</p>
@@ -206,25 +209,21 @@
             </div>
 
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                <div class="customer">
-                    <p class="counter-count">3000</p>
-                    <p class="customer-p">Happy Clients</p>
+                <div class="order">
+                <p class="counter-counnt">100</p>
+                    <p class="order-p">Support </p>
                 </div>
             </div>
 
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="col-lg-4 col-md-3 col-sm-3 col-xs-12">
                 <div class="design">
                     <p class="counter-count">90</p>
                     <p class="design-p">Dedicated Staff</p>
                 </div>
             </div>
 
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                <div class="order">
-                <p class="counter-counnt">100</p>
-                    <p class="order-p">Online Support </p>
-                </div>
-            </div>
+        
+
         </div>
     </div>
 </div>
@@ -266,7 +265,7 @@ $('.counter-counnt').each(function () {
 
 
 
-
+  </br></br>
 
 
 
@@ -279,7 +278,7 @@ $('.counter-counnt').each(function () {
 
         <div class="section-title">
           <h2>Services</h2>
-          <p>Worrying much about your Financial dates, Compliances, and Auditing Problems? Get an Appointment with us for the Best Solutions </p>
+          <p>Worrying much about your Financial Dates, Compliances, and Auditing Problems? Get an Appointment with us for the Solutions </p>
         </div>
 
       
@@ -488,10 +487,14 @@ $conn->close();
 
 
            <div class="row">
-           <div class="col-lg-6 order-2 order-lg-2">
+           <div class="col-lg-6 order-1 order-lg-2">
 
            <input type="datetime-local" name="datetime" class="form-control" id="name" placeholder="Appointment time is only between 10:30 to 6:30 AM" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required/>
            
+          
+          </div>
+          <div class="col-lg-6 order-2 order-lg-2">
+          <p><i>(Office Timing- 10:30 AM to 6:00PM, Workday- Monday to Friday)</i></p>
           
           </div>
          </div>
@@ -691,7 +694,7 @@ commensurate rewards.
 
 
           <div class="col-lg-4 " style="background-color:#018481; color:white; " >
-</br> </br>     <h3 class="text-center">How we are different!</h3> </br>
+</br> </br>     <h3 class="text-center">Our Team</h3> </br>
           <p style="padding-left:30px; padding-right:30px;">
           GDK and Associates is a blend of distinguished Chartered Accountant, Corporate Financial Advisors, and Tax Consultants in India. Chartered Accountants’ firm outlines a combination of specialized skills that are equipped to offer sound Financial Solutions and Financial Advices. The association is an assemblage of professionally experienced people who are bound to add value and benefits as per the needs of clients.
           </p></br>
@@ -814,7 +817,7 @@ $conn->close();
      <form  id="form_2"  action="index.php" method="post">
   <div class="row">
     <div class="col">
-      <input type="name" name="name" class="form-control" placeholder="name" required/>
+      <input type="name" name="name" class="form-control" placeholder="Name" required/>
     </div>
   </div>
   
@@ -1078,7 +1081,7 @@ $conn->close();
 
   <div class="row">
     <div class="col">
-      <input type="phone" name="phone" class="form-control" placeholder="phone" required/>
+      <input type="phone" name="phone" class="form-control" placeholder="Phone" required/>
     </div>
   </div>
 
@@ -1188,7 +1191,11 @@ $conn->close();
 
 
 
-
+<script>
+if ( window.history.replaceState ) {
+  window.history.replaceState( null, null, window.location.href );
+}
+</script>
 
 
 
@@ -1209,6 +1216,13 @@ $conn->close();
 
   </main><!-- End #main -->
 
+
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<a href="https://api.whatsapp.com/send?phone=919406749594&text=Hello%2C%20I'm%20here%20about..." class="float" target="_blank">
+<i class="fa fa-whatsapp my-float"></i>
+</a>
 
   <?php include('footer.php');  ?>
 

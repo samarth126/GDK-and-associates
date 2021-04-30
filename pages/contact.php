@@ -2,7 +2,7 @@
 
 <div class="box">
      
- <img class="responsive wow fadeInUp" src="../assets\img\banners\contactus.png" alt=" GST registration">
+ <img class="responsive wow fadeInUp" src="../assets\img\banners\contactus (1).png" alt=" GST registration">
                 <div class="text">
                 <div class="secttion-title">
                 <h2>Contact</h2>
@@ -28,19 +28,19 @@
               <div class="address">
                 <i class="bi bi-geo-alt"></i>
                 <h4>Location:</h4>
-                <p>A108 Adam Street, New York, NY 535022</p>
+                <p>18/1, YN Road, 404-B, Prakrati Corporate, Behind Mocha Restaurant, Indore- 452001.</p>
               </div>
 
               <div class="email">
                 <i class="bi bi-envelope"></i>
                 <h4>Email:</h4>
-                <p>info@example.com</p>
+                <p>info@gdkandassociates.com</p>
               </div>
 
               <div class="phone">
                 <i class="bi bi-phone"></i>
                 <h4>Call:</h4>
-                <p>+1 5589 55488 55s</p>
+                <p>0731-4977901</p>
               </div>
 
               <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
@@ -93,7 +93,7 @@ $conn->close();
           <form  id="form_2"  action="contact.php" method="post">
   <div class="row">
     <div class="col">
-      <input type="name" name="name" class="form-control" placeholder="name" required/>
+      <input type="name" name="name" class="form-control" placeholder="Name" required/>
     </div>
   </div>
   
@@ -357,7 +357,7 @@ $conn->close();
 
   <div class="row">
     <div class="col">
-      <input type="phone" name="phone" class="form-control" placeholder="phone" required/>
+      <input type="phone" name="phone" class="form-control" placeholder="Phone" required/>
     </div>
   </div>
 

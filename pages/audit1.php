@@ -27,7 +27,7 @@ While most of the rules of business have changed, the Principles haven’t. Meet
 <p>We at GDK & Associates provide our assurance services to our clients in the following fields-</p>
 
 
-          <div class="text-center">  <h3>Statutory Audits</h3></div></br>
+          <div class="text-center">  <h3>STATUTORY AUDITS</h3></div></br>
             <p>Statutory Audit, by definition is an audit which is compulsory to be conducted by way of any statute. It is conducted with the object of finding whether the financial statements of a company are true and fair or not, and to express an opinion therein by way of an Audit Report in accordance with the Standards on Auditing. At GDK & Associates,
              we provide the services of Statutory Audit under the Companies Act and various other statutes to our clients.</p>
          <p>
@@ -44,7 +44,7 @@ While most of the rules of business have changed, the Principles haven’t. Meet
 </br>
 
 
-           <div class="text-center">  <h3>Management and Internal Audits</h3> </div></br>
+           <div class="text-center">  <h3> MANAGEMENT AND INTERNAL AUDITS</h3> </div></br>
       
 
       <p>

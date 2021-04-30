@@ -7,10 +7,9 @@
     <!-- ======= Team Section ======= -->
     <section id="team" class="team section-bg">
       <div class="container">
-
+</br></br>
         <div class="section-title">
           <h2>Team</h2>
-          <p>.....some data about the team........</p>
         </div>
 
         <div class="row">
@@ -37,7 +36,7 @@
               <h4>CA. Seema Mangal </h4>
               <span>Partner</span>
               <p>
-              Mangal is a fellow member of the Institute of Chartered Accountants of India.. Her areas of expertise are taxation including Indirect Tax. She is also Co-Chairperson (Director) in Vyaparik Audhyogik Sahkari Bank Ltd., Indore, and actively takes part in the policy matters of the Bank.
+              is a fellow member of the Institute of Chartered Accountants of India.. Her areas of expertise are taxation including Indirect Tax. She is also Co-Chairperson (Director) in Vyaparik Audhyogik Sahkari Bank Ltd., Indore, and actively takes part in the policy matters of the Bank.
                    </p>
               <div class="social">
                 <a href=""><i class="bi bi-twitter"></i></a>
@@ -178,7 +177,7 @@
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="member">
               <img src="../assets\img\team\CA Mayank Kesharwani.png" alt="">
-              <h4>CA. Mayank Keshawani </h4>
+              <h4>CA. Mayank  keshawani </h4>
               <span>Partner</span>
               <p>
               is an associate member of the Institute of Chartered Accountants of India who specializes in the field of internal audit of government organizations as well as local authority.

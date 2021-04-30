@@ -54,14 +54,14 @@
 
 
         <div class="section-title">
-          <h2>Our Exprrience</h2>
+          <h2>Our Experience</h2>
           <p>The details of professional experience of M/s. G D K and Associates are elaborated in the following paragraphs. </p>
                </div>
 
                <div class="row">
          
          <div class="col-lg-12 pt-4 pt-lg-0 order-2 order-lg-1 content">
-         <div class="text-center">  <h3>Audit Experience in the Banking Sector</h3></div>
+         <div class="text-center">  <a href="audit.php"><h3>Audit in the Banking Sector</h3></a> </div>
          </br>
            <ul>
            <li><b>I.	Concurrent Audits</b></li>
@@ -78,7 +78,7 @@ The scope of such audit includes verification, on a daily basis, of all transact
 </br>
 </br>
 
-           <div class="text-center"> <h3>	Audit Experience of Companies incorporated under the Indian Companies Act.</h3></div>
+           <div class="text-center">  <a href="audit1.php"><h3>Audit of Companies Incorporated Under the Indian Companies Act </h3></a></div>
 </br></br>
             <ul>
             <li><b>I.	Statutory Audits</b></li>
@@ -99,14 +99,14 @@ The scope of such audit includes verification, on a daily basis, of all transact
 </br>
 
 
-            <div class="text-center"> <h3>3.	Stock Verification Audits</h3></div>
-</br>
+            <div class="text-center"> <a href="oas.php"><h3>3.	Stock Verification Audits</h3></a></div>
+</br> 
            <p>We have carried out stock verification audits of companies/ borrowers on behalf of management, banks and other financial institutions. </p>
         
  </br>
 </br>
 </br>      
-           <div class="text-center"> <h3>4.	Audit Experience of Non-Corporate Entities</h3></div>
+           <div class="text-center">  <a href="audit2.php"><h3>4.	Audit  of Non-Corporate Entities</h3></a></div>
            </br>
 </br>
            <ol>
@@ -124,7 +124,7 @@ The scope of such audit includes verification, on a daily basis, of all transact
            </br>
 </br>
     
-           <div class="text-center"> <h3>5.	Experience of Direct Taxes</h3></div>
+           <div class="text-center">  <a href="directtax.php"><h3>5.	Direct Taxes</h3></a></div>
            </br>
            <p>We are Income Tax and Wealth Tax Advisors to various corporate and non-corporate entities.  The area of services includes:</p>
            <ol>
@@ -137,7 +137,7 @@ The scope of such audit includes verification, on a daily basis, of all transact
            </br>
 </br>
     
-           <div class="text-center"> <h3>6.	Experience of Indirect Taxes</h3></div>
+           <div class="text-center">  <a href="indirecttax.php"><h3>6.	Indirect Taxes</h3></a></div>
            </br>
            <p>We are Advisors to corporate and non-corporate clients for their Central Excise Matters with specific reference to the followings:</p> 
            <ol>
@@ -149,7 +149,7 @@ The scope of such audit includes verification, on a daily basis, of all transact
 </br></br>
 
 
-<div class="text-center"> <h3>7.	Experience of Corporate Law Matters</h3></div>
+<div class="text-center">  <a href="eclm.php"><h3>7. Corporate Law Matters</h3></a></div>
            </br>
            <p>We are Advisors to various corporate clients rendering the following services:</p> 
            <ol>
@@ -163,7 +163,7 @@ The scope of such audit includes verification, on a daily basis, of all transact
 
 
 
-<div class="text-center"> <h3>8.	Other areas of Services</h3></div>
+<div class="text-center">  <a href="oas.php"><h3>8.	Other Areas of Services</h3></a></div>
            </br>
 
            <ol>

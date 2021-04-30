@@ -160,7 +160,7 @@ mysqli_close($conn);
     }</style>
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex align-items-center">
-    <a href="index.html" class="logo me-auto"><img src="assets/logo2.jpg" alt="hhh" class="img-fluid"></a>
+    <a href="index.php" class="logo me-auto"><img src="assets\GDK associates logo-1.jpg" alt="hhh" class="img-fluid"></a>
     
     <div class="container d-flex align-items-center">
 
@@ -204,7 +204,7 @@ mysqli_close($conn);
           <li><a class="nav-link scrollto" href="pages/contact.php">Contact</a></li>
 
 
-        <div id="bb"><li><a href="logout.php"><button type="button" id="aa" class="btn btn-danger">
+        <div id="bb"><li><a href="adminlogout.php"><button type="button" id="aa" class="btn btn-danger">
           LOG OUT
         </button></a></li></div>
         </ul>

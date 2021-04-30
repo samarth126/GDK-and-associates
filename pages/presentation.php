@@ -2,7 +2,7 @@
 
 <div class="box">
      
- <img class="responsive wow fadeInUp" src="../assets\img\banners\presentation.png" alt=" GST registration">
+ <img class="responsive wow fadeInUp" src="../assets\img\banners\presentation (1).png" alt=" GST registration">
             <div class="text">
             <div class="secttion-title">
             <h2>Presentation</h2>
