@@ -22,6 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST"){
     else{
         $username = trim($_POST['username']);
         $password = trim($_POST['password']);
+       
     }
 
 
@@ -52,6 +53,7 @@ if(empty($err))
                             $_SESSION["username"] = $username;
                             $_SESSION["id"] = $id;
                             $_SESSION["loggedin"] = true;
+                           
 
                             //Redirect user to welcome page
                             header("location: adminwelcome.php");
@@ -119,6 +121,7 @@ if(empty($err))
     <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Password">
   </div>
   </br>
+ 
   <div class="form-group form-check">
     <input type="checkbox" class="form-check-input" id="exampleCheck1">
     <label class="form-check-label" for="exampleCheck1">Check me out</label>

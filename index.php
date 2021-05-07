@@ -474,7 +474,7 @@ $conn->close();
 
 
 <select class="form-control" name="partnername" id="Selectid"  placeholder="Select Services" required>
-            <option value="please select" >CA Kemisha  Soni</option>
+            <option value="1" >CA Kemisha  Soni</option>
             </select>
 
  </div>

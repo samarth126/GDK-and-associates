@@ -198,11 +198,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !==true)
         </a>
   </div>
 
-  <div class="col-lg-4 order-1 order-lg-1">
-          <a href="adminregister.php">
-            <img src="assets\img\admin\createuser.png" class="img-fluid" alt="">
-        </a>
-  </div>
+ 
 
   </div>
 </br></br>

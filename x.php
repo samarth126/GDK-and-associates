@@ -1,16 +1,75 @@
-<?php include('header.php') ?>
+<?php
+
+
+session_start();
+
+if(!isset($_SESSION['loggedinn']) || $_SESSION['loggedinn'] !==true)
+{
+    header("location: login.php");
+}
+
+
+?>
+
+
+
+<?php
+
+require_once "config.php";
+
+echo $_SESSION['hello'];
+
+if (isset($_POST['subb'])){
+
+	$name = $_POST['name'];
+
+
+
+if(isset($_SESSION['hello']))
+{
+
+    switch ($_SESSION['hello']) {
+        case "1":
+            $sql= "INSERT INTO `kanu`(`message`) VALUES ('$name')";
+          break;
+        case "2":
+            $sql= "INSERT INTO `ketu`(`message`) VALUES ('$name')";
+          break;
+        default:
+          echo "Your favorite color is neither red, blue, nor green!";
+      }
+}
 
 
 
 
+if($conn->query($sql) == true){
+    //echo "Successfully inserted";
+  
+    // Flag for successful insertion
+    $insertinto = true;
+  }
+  else{
+    echo "ERROR: $sql <br> $conn->error";
+  }
+  
+  // Close the database connection
+  $conn->close();
+  
 
 
+}
+
+?>
+
+<form action="x.php" method="post">
+<input type="text" name="name" placeholder="Your name..">
+<input type="submit" name="subb">
+</form>
 
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<a href="https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
-<i class="fa fa-whatsapp my-float"></i>
-</a>
-
-
-<?php include('footer.php') ?>
+<div id="bb"><li><a href="logout.php"><button type="button" id="aa" class="btn btn-danger">
+          LOG OUT
+        </button></a></li>
+        </ul>
+        </div>

@@ -137,39 +137,153 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !==true)
 
 <div class="container">
 
-  <div class="btn-group-vertical">
+ 
+<?php
+
+require_once "config.php";
 
 
-  <a href="./cashbook"><button type="submit" class="btn btn-primary">Check cash book</button></a>
-  </br></br>
-  
-  <a href="/salesreg"><button type="submit" class="btn btn-primary">Check sales register</button></a>
-  </br></br>
-  
-  <a href="/purchasereg"><button type="submit" class="btn btn-primary">Check Purchase register</button></a>
-  </br></br>
 
-  <a href="/expensesreg"><button type="submit" class="btn btn-primary">Check Expenses Register</button></a>
-  </br></br>
+if(isset($_SESSION["id"]))
+{
 
-  <a href="/fixedassetreg"><button type="submit" class="btn btn-primary">Check Fixed Assets Registers</button></a>
-  </br></br>
+    switch ($_SESSION["id"]) {
+        case "2":
+            $sql = "SELECT * FROM admin1";
+          break;
+        case "3":
+            $sql = "SELECT * FROM  admin2";
+          break;
+        case "4":
+            $sql = "SELECT * FROM  admin3";
+          break;
+        case "5":
+            $sql = "SELECT * FROM  admin4";
+          break;
+        case "6":
+            $sql = "SELECT * FROM  admin5";
+          break;
+        default:
+          echo "Your favorite color is neither red, blue, nor green!";
+      }
+}
 
-  <a href="/vouchers"><button type="submit" class="btn btn-primary">Check Vouchers</button></a>
-  </br></br>
+$result = mysqli_query($conn, $sql);
 
-  <a href="/bank"><button type="submit" class="btn btn-primary">Check Bank statements</button></a>
-  </br></br>
-
-  <a href="/boa"><button type="submit" class="btn btn-primary">Check Books of Accounts</button></a>
-
-  </br></br>
-
-  <a href="/otherbills"><button type="submit" class="btn btn-primary">Check Other Relevant Bills, Statements, and Vouchers.</button></a>
+$files = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
 
-</br>
+// Downloads files
+if (isset($_GET['file_id'])) {
+    $id = $_GET['file_id'];
+
+    // fetch file to download from database
+    if(isset($_SESSION["id"]))
+{
+
+    switch ($_SESSION["id"]) {
+        case "2":
+            $sql = "SELECT * FROM admin1 WHERE id=$id";
+          break;
+        case "3":
+            $sql = "SELECT * FROM admin2 WHERE id=$id";
+          break;
+        case "4":
+            $sql = "SELECT * FROM admin3 WHERE id=$id";
+          break;
+        case "5":
+            $sql = "SELECT * FROM admin4 WHERE id=$id";
+          break;
+        case "6":
+            $sql = "SELECT * FROM admin5 WHERE id=$id";
+          break;
+        default:
+          echo "Your favorite color is neither red, blue, nor green!";
+      }
+}
+   
 
 
-</div>
+    $result = mysqli_query($conn, $sql);
+
+    
+
+    $file = mysqli_fetch_assoc($result);
+    $filepath = 'uploads/' . $file['name'];
+
+    if (file_exists($filepath)) {
+        header('Content-Description: File Transfer');
+        header('Content-Type: application/octet-stream');
+        header('Content-Disposition: attachment; filename=' . basename($filepath));
+        header('Expires: 0');
+        header('Cache-Control: must-revalidate');
+        header('Pragma: public');
+        header('Content-Length: ' . filesize('uploads/' . $file['name']));
+        readfile('uploads/' . $file['name']);
+
+        // Now update downloads count
+        $newCount = $file['downloads'] + 1;
+        $updateQuery = "UPDATE files SET downloads=$newCount WHERE id=$id";
+        mysqli_query($conn, $updateQuery);
+        exit;
+    }
+
+}
+
+
+
+?>
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="style.css">
+  <title>Download files</title>
+</head>
+<body>
+<?php echo $_SESSION['adminhello'] ?>
+<table>
+<thead>
+    <th>ID</th>
+    <th>USER_ID</th>
+    <th>USER_NAME</th>
+    <th>Filename</th>
+    <th>size (in mb)</th>
+    <th>Downloads</th>
+    <th>Action</th>
+</thead>
+<tbody>
+  <?php  foreach ($files as $file): ?>
+    <tr>
+      <td><?php echo $file['id']; ?></td>
+      <td><?php echo $file['user_id']; ?></td>
+      <td><?php echo $file['user_name']; ?></td>
+      <td><?php echo $file['name']; ?></td>
+      <td><?php echo floor($file['size'] / 1000) . ' KB'; ?></td>
+      <td><?php echo $file['downloads']; ?></td>
+      <td><a href="userfiles.php?file_id=<?php echo $file['id'] ?>">Download</a></td>
+    </tr>
+  <?php endforeach;?>
+
+</tbody>
+</table>
+<div id="bb"><li><a href="adminlogout.php"><button type="button" id="aa" class="btn btn-danger">
+          LOG OUT
+        </button></a></li>
+        </ul>
+      </div>
+
+      <div id="bb"><li><a href="zadminupload.php"><button type="button" id="aa" class="btn btn-danger">
+          admin uploads
+        </button></a></li>
+        </ul>
+      </div>
 </div>

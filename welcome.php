@@ -17,10 +17,6 @@ if(!isset($_SESSION['loggedinn']) || $_SESSION['loggedinn'] !==true)
 
 
 
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -127,11 +123,11 @@ if(!isset($_SESSION['loggedinn']) || $_SESSION['loggedinn'] !==true)
 
 
 
+  </br> </br> </br> </br> </br> </br>
 
 
 
-
-
+ 
 
 
 
@@ -161,665 +157,113 @@ if(!isset($_SESSION['loggedinn']) || $_SESSION['loggedinn'] !==true)
 </style>
 
 
-<div class="secttion-title">
-          <h2>Please Upload Cash Book here</h2>
-         </div>
-<div class="row">
-
-<div class="d-flex justify-content-center">
-
-
-<!--------Cash BOOK UPLOAD-------->
-
-<?php
-
-// Upload and Rename File
-
-if (isset($_POST['submit']))
-{
-	$filename = $_FILES["file"]["name"];
-	$file_basename = substr($filename, 0, strripos($filename, '.')); // get file extention
-	$file_ext = substr($filename, strripos($filename, '.')); // get file name
-	$filesize = $_FILES["file"]["size"];
-	$allowed_file_types = array('.doc','.docx','.rtf','.pdf');	
-
-	if (in_array($file_ext,$allowed_file_types) || ($filesize < 200000))
-	{	
-		// Rename file
-		$newfilename = $_SESSION['username'] . $file_ext;
-		if (file_exists("cashbook/" . $newfilename))
-		{
-			// file already exists error
-			echo "You have already uploaded this file.";
-		}
-		else
-		{		
-			move_uploaded_file($_FILES["file"]["tmp_name"], "cashbook/" . $newfilename);
-			echo "File uploaded successfully.";		
-		}
-	}
-	elseif (empty($file_basename))
-	{	
-		// file selection error
-		echo "Please select a file to upload.";
-	} 
-	
-	else
-	{
-		// file type error
-		echo "Only these file typs are allowed for upload: " . implode(', ',$allowed_file_types);
-		unlink($_FILES["file"]["tmp_name"]);
-	}
-}
-
-?>
-
-<form action="" enctype="multipart/form-data" method="post">
-<input id="file" name="file" id='godzilla' type="file" />
-<button onclick='document.getElementById("godzilla").click()'>delete the upload</button>
-<input id="Submit" name="submit" type="submit" value="Upload" />
-</form>
-
-
-
-
-
-</div>
-</div>
-</br></br></br>
-
-
-
-
-
-
-
-
-
-<!--------Vouchers UPLOAD-------->
-
-<div class="secttion-title">
-          <h2>Please Upload Vouchers here</h2>
-         </div>
-<div class="row">
-
-<div class="d-flex justify-content-center">
-
-
-<?php
-
-// Upload and Rename File
-
-if (isset($_POST['submit1']))
-{
-	$filename = $_FILES["file1"]["name"];
-	$file_basename = substr($filename, 0, strripos($filename, '.')); // get file extention
-	$file_ext = substr($filename, strripos($filename, '.')); // get file name
-	$filesize = $_FILES["file1"]["size"];
-	$allowed_file_types = array('.doc','.docx','.rtf','.pdf');	
-
-	if (in_array($file_ext,$allowed_file_types) || ($filesize < 200000))
-	{	
-		// Rename file
-		$newfilename = $_SESSION['username'] . $file_ext;
-		if (file_exists("vouchers/" . $newfilename))
-		{
-			// file already exists error
-			echo "You have already uploaded this file.";
-		}
-		else
-		{		
-			move_uploaded_file($_FILES["file1"]["tmp_name"], "vouchers/" . $newfilename);
-			echo "File uploaded successfully.";		
-		}
-	}
-	elseif (empty($file_basename))
-	{	
-		// file selection error
-		echo "Please select a file to upload.";
-	} 
-	
-	else
-	{
-		// file type error
-		echo "Only these file typs are allowed for upload: " . implode(', ',$allowed_file_types);
-		unlink($_FILES["file1"]["tmp_name"]);
-	}
-}
-
-?>
-
-<form action="" enctype="multipart/form-data" method="post">
-<input id="file" name="file1" id='godzilla' type="file" />
-<button onclick='document.getElementById("godzilla").click()'>delete the upload</button>
-<input id="Submit" name="submit1" type="submit" value="Submit" />
-</form>
-
-
-</div>
-</div>
-</br></br></br>
-
-
-
-
-
-
-
-<!--------Bank Statements UPLOAD-------->
-
-<div class="secttion-title">
-          <h2>Please Upload Bank Statements here</h2>
-         </div>
-<div class="row">
-
-<div class="d-flex justify-content-center">
 
 
 
 <?php
 
-// Upload and Rename File
+require_once "config.php";
 
-if (isset($_POST['submit2']))
-{
-	$filename = $_FILES["bankfile"]["name"];
-	$file_basename = substr($filename, 0, strripos($filename, '.')); // get file extention
-	$file_ext = substr($filename, strripos($filename, '.')); // get file name
-	$filesize = $_FILES["bankfile"]["size"];
-	$allowed_file_types = array('.doc','.docx','.rtf','.pdf');	
+echo $_SESSION['hello'];
 
-	if (in_array($file_ext,$allowed_file_types) || ($filesize < 200000))
-	{	
-		// Rename file
-		$newfilename = $_SESSION['username'] . $file_ext;
-		if (file_exists("bank/" . $newfilename))
-		{
-			// file already exists error
-			echo "You have already uploaded this file.";
-		}
-		else
-		{		
-			move_uploaded_file($_FILES["bankfile"]["tmp_name"], "bank/" . $newfilename);
-			echo "File uploaded successfully.";		
-		}
-	}
-	elseif (empty($file_basename))
-	{	
-		// file selection error
-		echo "Please select a file to upload.";
-	} 
-	
-	else
-	{
-		// file type error
-		echo "Only these file typs are allowed for upload: " . implode(', ',$allowed_file_types);
-		unlink($_FILES["bankfile"]["tmp_name"]);
-	}
+
+
+// Uploads files
+if (isset($_POST['save'])) { // if save button on the form is clicked
+    // name of the uploaded file
+    
+    $message = $_POST['message'];
+	//id of user is passed in table
+	$user_id =  $_SESSION["id"];
+//id of user is passed in table
+	$user_name =  $_SESSION["username"];
+
+    $filename = $_FILES['myfile']['name'];
+
+    // destination of the file on the server
+    $destination = 'uploads/' . $filename;
+
+    // get the file extension
+    $extension = pathinfo($filename, PATHINFO_EXTENSION);
+
+    // the physical file on a temporary uploads directory on the server
+    $file = $_FILES['myfile']['tmp_name'];
+    $size = $_FILES['myfile']['size'];
+
+    if (!in_array($extension, ['zip', 'pdf', 'docx'])) {
+        echo "You file extension must be .zip, .pdf or .docx";
+    } elseif ($_FILES['myfile']['size'] > 1000000) { // file shouldn't be larger than 1Megabyte
+        echo "File too large!";
+    } else {
+        // move the uploaded (temporary) file to the specified destination
+        if (move_uploaded_file($file, $destination)) {
+            
+
+
+
+            if(isset($_SESSION['hello']))
+            {
+            
+                switch ($_SESSION['hello']) {
+                    case "1":
+                        $sql = "INSERT INTO admin1 (user_id, user_name, name, size, downloads, message) VALUES ('$user_id', '$user_name', '$filename', $size, 0, '$message')";
+                      break;
+					case "2":
+                        $sql = "INSERT INTO admin2 (user_id, user_name, name, size, downloads, message) VALUES ('$user_id', '$user_name', '$filename', $size, 0, '$message')";
+                      break;
+					case "3":
+                        $sql = "INSERT INTO admin3 (user_id, user_name, name, size, downloads, message) VALUES ('$user_id', '$user_name', '$filename', $size, 0, '$message')";
+                      break;
+					case "4":
+                        $sql = "INSERT INTO admin4 (user_id, user_name, name, size, downloads, message) VALUES ('$user_id', '$user_name', '$filename', $size, 0, '$message')";
+                      break;
+					case "5":
+                        $sql = "INSERT INTO admin5 (user_id, user_name, name, size, downloads, message) VALUES ('$user_id', '$user_name', '$filename', $size, 0, '$message')";
+                      break;
+                    default:
+                      echo "Your favorite color is neither red, blue, nor green!";
+                  }
+            }
+
+
+            if (mysqli_query($conn, $sql)) {
+                echo "File uploaded successfully";
+            }
+        } else {
+            echo "Failed to upload file.";
+        }
+    }
 }
+
+
+
+
+
+
 
 ?>
 
-<form action="" enctype="multipart/form-data" method="post">
-<input id="file" name="bankfile" id='godzilla' type="file" />
-<button onclick='document.getElementById("godzilla").click()'>delete the upload</button>
-<input id="Submit" name="submit2" type="submit" value="Submit" />
-</form>
-
-
-
-</div>
-</div>
-</br></br></br>
-
-
-
-
-
-
-
-
-
-
-<!--------Purchase register UPLOAD-------->
-
-
-<div class="secttion-title">
-          <h2>Please Upload Purchase Register here</h2>
-         </div>
-<div class="row">
-
-<div class="d-flex justify-content-center">
-
-
-<?php
-
-// Upload and Rename File
-
-if (isset($_POST['submit3']))
-{
-	$filename = $_FILES["file2"]["name"];
-	$file_basename = substr($filename, 0, strripos($filename, '.')); // get file extention
-	$file_ext = substr($filename, strripos($filename, '.')); // get file name
-	$filesize = $_FILES["file2"]["size"];
-	$allowed_file_types = array('.doc','.docx','.rtf','.pdf');	
-
-	if (in_array($file_ext,$allowed_file_types) || ($filesize < 200000))
-	{	
-		// Rename file
-		$newfilename = $_SESSION['username'] . $file_ext;
-		if (file_exists("purchasereg/" . $newfilename))
-		{
-			// file already exists error
-			echo "You have already uploaded this file.";
-		}
-		else
-		{		
-			move_uploaded_file($_FILES["file2"]["tmp_name"], "purchasereg/" . $newfilename);
-			echo "File uploaded successfully.";		
-		}
-	}
-	elseif (empty($file_basename))
-	{	
-		// file selection error
-		echo "Please select a file to upload.";
-	} 
-	
-	else
-	{
-		// file type error
-		echo "Only these file typs are allowed for upload: " . implode(', ',$allowed_file_types);
-		unlink($_FILES["file2"]["tmp_name"]);
-	}
-}
-
-?>
-
-<form action="" enctype="multipart/form-data" method="post">
-<input id="file" name="file2" id='godzilla' type="file" />
-<button onclick='document.getElementById("godzilla").click()'>delete the upload</button>
-<input id="Submit" name="submit3" type="submit" value="Submit" />
-</form>
-
-
-
-
-</div>
-</div>
-</br></br></br>
-
-
-
-
-
-
-
-
-
-<!--------Expenses register UPLOAD-------->
-
-
-<div class="secttion-title">
-          <h2>Please Upload Expenses register here</h2>
-         </div>
-<div class="row">
-
-<div class="d-flex justify-content-center">
-
-
-<?php
-
-// Upload and Rename File
-
-if (isset($_POST['submit4']))
-{
-	$filename = $_FILES["file3"]["name"];
-	$file_basename = substr($filename, 0, strripos($filename, '.')); // get file extention
-	$file_ext = substr($filename, strripos($filename, '.')); // get file name
-	$filesize = $_FILES["file3"]["size"];
-	$allowed_file_types = array('.doc','.docx','.rtf','.pdf');	
-
-	if (in_array($file_ext,$allowed_file_types) || ($filesize < 200000))
-	{	
-		// Rename file
-		$newfilename = $_SESSION['username'] . $file_ext;
-		if (file_exists("expensesreg/" . $newfilename))
-		{
-			// file already exists error
-			echo "You have already uploaded this file.";
-		}
-		else
-		{		
-			move_uploaded_file($_FILES["file3"]["tmp_name"], "expensesreg/" . $newfilename);
-			echo "File uploaded successfully.";		
-		}
-	}
-	elseif (empty($file_basename))
-	{	
-		// file selection error
-		echo "Please select a file to upload.";
-	} 
-	
-	else
-	{
-		// file type error
-		echo "Only these file typs are allowed for upload: " . implode(', ',$allowed_file_types);
-		unlink($_FILES["file3"]["tmp_name"]);
-	}
-}
-
-?>
-
-<form action="" enctype="multipart/form-data" method="post">
-<input id="file" name="file3" id='godzilla' type="file" />
-<button onclick='document.getElementById("godzilla").click()'>delete the upload</button>
-<input id="Submit" name="submit4" type="submit" value="Submit" />
-</form>
-
-
-
-
-</div>
-</div>
-</br></br></br>
-
-
-
-
-
-
-
-
-
-
-<!--------Sales register UPLOAD-------->
-
-
-<div class="secttion-title">
-          <h2>Please Upload Sales Register here</h2>
-         </div>
-<div class="row">
-
-<div class="d-flex justify-content-center">
-
-
-<?php
-
-// Upload and Rename File
-
-if (isset($_POST['submit5']))
-{
-	$filename = $_FILES["file4"]["name"];
-	$file_basename = substr($filename, 0, strripos($filename, '.')); // get file extention
-	$file_ext = substr($filename, strripos($filename, '.')); // get file name
-	$filesize = $_FILES["file4"]["size"];
-	$allowed_file_types = array('.doc','.docx','.rtf','.pdf');	
-
-	if (in_array($file_ext,$allowed_file_types) || ($filesize < 200000))
-	{	
-		// Rename file
-		$newfilename = $_SESSION['username'] . $file_ext;
-		if (file_exists("salesreg/" . $newfilename))
-		{
-			// file already exists error
-			echo "You have already uploaded this file.";
-		}
-		else
-		{		
-			move_uploaded_file($_FILES["file4"]["tmp_name"], "salesreg/" . $newfilename);
-			echo "File uploaded successfully.";		
-		}
-	}
-	elseif (empty($file_basename))
-	{	
-		// file selection error
-		echo "Please select a file to upload.";
-	} 
-	
-	else
-	{
-		// file type error
-		echo "Only these file typs are allowed for upload: " . implode(', ',$allowed_file_types);
-		unlink($_FILES["file4"]["tmp_name"]);
-	}
-}
-
-?>
-
-<form action="" enctype="multipart/form-data" method="post">
-<input id="file" name="file4" id='godzilla' type="file" />
-<button onclick='document.getElementById("godzilla").click()'>delete the upload</button>
-<input id="Submit" name="submit5" type="submit" value="Submit" />
-</form>
-
-
-
-</div>
-</div>
-</br></br></br>
-
-
-
-
-
-
-
-
-
-<!--------Fixed asset register UPLOAD-------->
-
-<div class="secttion-title">
-          <h2>Please Upload Fixed Asset Register here</h2>
-         </div>
-<div class="row">
-
-<div class="d-flex justify-content-center">
-
-
-<?php
-
-// Upload and Rename File
-
-if (isset($_POST['submit6']))
-{
-	$filename = $_FILES["file5"]["name"];
-	$file_basename = substr($filename, 0, strripos($filename, '.')); // get file extention
-	$file_ext = substr($filename, strripos($filename, '.')); // get file name
-	$filesize = $_FILES["file5"]["size"];
-	$allowed_file_types = array('.doc','.docx','.rtf','.pdf');	
-
-	if (in_array($file_ext,$allowed_file_types) || ($filesize < 200000))
-	{	
-		// Rename file
-		$newfilename = $_SESSION['username'] . $file_ext;
-		if (file_exists("fixedassetreg/" . $newfilename))
-		{
-			// file already exists error
-			echo "You have already uploaded this file.";
-		}
-		else
-		{		
-			move_uploaded_file($_FILES["file5"]["tmp_name"], "fixedassetreg/" . $newfilename);
-			echo "File uploaded successfully.";		
-		}
-	}
-	elseif (empty($file_basename))
-	{	
-		// file selection error
-		echo "Please select a file to upload.";
-	} 
-	
-	else
-	{
-		// file type error
-		echo "Only these file typs are allowed for upload: " . implode(', ',$allowed_file_types);
-		unlink($_FILES["file5"]["tmp_name"]);
-	}
-}
-
-?>
-
-<form action="" enctype="multipart/form-data" method="post">
-<input id="file" name="file5" id='godzilla' type="file" />
-<button onclick='document.getElementById("godzilla").click()'>delete the upload</button>
-<input id="Submit" name="submit6" type="submit" value="Submit" />
-</form>
-
-
-
-</div>
-</div>
-</br></br></br>
-
-
-
-
-
-
-
-
-<!--------books of accounts UPLOAD-------->
-<div class="secttion-title">
-          <h2>Please Upload Books of Accounts here</h2>
-         </div>
-<div class="row">
-
-<div class="d-flex justify-content-center">
-
-
-<?php
-
-// Upload and Rename File
-
-if (isset($_POST['submit7']))
-{
-	$filename = $_FILES["file6"]["name"];
-	$file_basename = substr($filename, 0, strripos($filename, '.')); // get file extention
-	$file_ext = substr($filename, strripos($filename, '.')); // get file name
-	$filesize = $_FILES["file6"]["size"];
-	$allowed_file_types = array('.doc','.docx','.rtf','.pdf');	
-
-	if (in_array($file_ext,$allowed_file_types) || ($filesize < 200000))
-	{	
-		// Rename file
-		$newfilename = $_SESSION['username'] . $file_ext;
-		if (file_exists("boa/" . $newfilename))
-		{
-			// file already exists error
-			echo "You have already uploaded this file.";
-		}
-		else
-		{		
-			move_uploaded_file($_FILES["file6"]["tmp_name"], "boa/" . $newfilename);
-			echo "File uploaded successfully.";		
-		}
-	}
-	elseif (empty($file_basename))
-	{	
-		// file selection error
-		echo "Please select a file to upload.";
-	} 
-	
-	else
-	{
-		// file type error
-		echo "Only these file typs are allowed for upload: " . implode(', ',$allowed_file_types);
-		unlink($_FILES["file6"]["tmp_name"]);
-	}
-}
-
-?>
-
-<form action="" enctype="multipart/form-data" method="post">
-<input id="file" name="file6" id='godzilla' type="file" />
-<button onclick='document.getElementById("godzilla").click()'>delete the upload</button>
-<input id="Submit" name="submit7" type="submit" value="Submit" />
-</form>
-
-
-
-
-</div>
-</div>
-</br></br></br>
-
-
-
-
-
-
-
-
-
-<!--------other relevent bills statements UPLOAD-------->
-<div class="secttion-title">
-          <h2>Please Upload Other Relevant Bills, Statements, and Vouchers here</h2>
-         </div>
-<div class="row">
-
-<div class="d-flex justify-content-center">
-
-
-
-
-<?php
-
-// Upload and Rename File
-
-if (isset($_POST['submit8']))
-{
-	$filename = $_FILES["file7"]["name"];
-	$file_basename = substr($filename, 0, strripos($filename, '.')); // get file extention
-	$file_ext = substr($filename, strripos($filename, '.')); // get file name
-	$filesize = $_FILES["file7"]["size"];
-	$allowed_file_types = array('.doc','.docx','.rtf','.pdf');	
-
-	if (in_array($file_ext,$allowed_file_types) || ($filesize < 200000))
-	{	
-		// Rename file
-		$newfilename = $_SESSION['username'] . $file_ext;
-		if (file_exists("otherbills/" . $newfilename))
-		{
-			// file already exists error
-			echo "You have already uploaded this file.";
-		}
-		else
-		{		
-			move_uploaded_file($_FILES["file7"]["tmp_name"], "otherbills/" . $newfilename);
-			echo "File uploaded successfully.";		
-		}
-	}
-	elseif (empty($file_basename))
-	{	
-		// file selection error
-		echo "Please select a file to upload.";
-	} 
-	
-	else
-	{
-		// file type error
-		echo "Only these file typs are allowed for upload: " . implode(', ',$allowed_file_types);
-		unlink($_FILES["file7"]["tmp_name"]);
-	}
-}
-
-?>
-
-<form action="" enctype="multipart/form-data" method="post">
-<input id="file" name="file7" id='godzilla' type="file" />
-<button onclick='document.getElementById("godzilla").click()'>delete the upload</button>
-<input id="Submit" name="submit8" type="submit" value="Submit" />
-</form>
-
-
-
-</div>
-</div>
-</br></br></br>
-
-
-
-
+<form action="welcome.php" method="post" enctype="multipart/form-data" >
+          <h3>Upload File</h3>
+          <input type="text" name="message" class="form-control" placeholder="Message" required/>
+          <input type="file" name="myfile"> <br>
+          <button type="submit" name="save">upload</button>
+        </form>
+
+
+<div id="bb"><li><a href="logout.php"><button type="button" id="aa" class="btn btn-danger">
+          LOG OUT
+        </button></a></li>
+        </ul>
+        </div>
+
+
+        
+<div id="bb"><li><a href="znewdow.php"><button type="button" id="aa" class="btn btn-danger">
+          user download
+        </button></a></li>
+        </ul>
+        </div>
 
 
 
@@ -855,5 +299,7 @@ function roar()
     console.log('depleted')
 }
 </script>
+
+
 
 <?php include('footer.php');  ?>

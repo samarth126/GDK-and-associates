@@ -22,15 +22,37 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !==true)
 
 <?php
 
-
+$id=15;
 require_once "config.php";
 
-$sql = "SELECT `id`, `name`, `email`, `phone`, `services`, `partnername`, `datetime` FROM `appointment` WHERE 1";
+echo $_SESSION["id"];
+
+
+switch ($_SESSION["id"]) {
+    case "2":
+        $sql = "SELECT * FROM appointment WHERE partnername='1'";
+      break;
+    case "3":
+        $sql = "SELECT * FROM appointment WHERE partnername='2'";
+      break;
+    case "4":
+        $sql = "SELECT * FROM appointment WHERE partnername='3'";
+      break;
+    case "5":
+        $sql = "SELECT * FROM appointment WHERE partnername='4'";
+      break;
+    case "6":
+        $sql = "SELECT * FROM appointment WHERE partnername='5'";
+      break;
+    default:
+      echo "Your favorite color is neither red, blue, nor green!";
+  }
+
+
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
   // output data of each row
-  while($row = $result->fetch_assoc()) {
 
     ?>
 
@@ -120,7 +142,7 @@ if ($result->num_rows > 0) {
 
 
 <?php
-}
+
 } else {
   echo "0 results";
 }
